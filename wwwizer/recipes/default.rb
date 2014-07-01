@@ -21,3 +21,7 @@ end
 link "/etc/nginx/sites-enabled/wwwizer" do
   to "/etc/nginx/sites-available/wwwizer"
 end
+
+service "nginx" do
+  action :restart
+end
